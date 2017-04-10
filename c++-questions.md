@@ -9,7 +9,7 @@
 1. Можно ли сделать конструктор виртуальным?
 1. Что выведет программа ниже?
 	```C++
-#include <iostream>
+	#include <iostream>
 
 	using namespace std;
 
