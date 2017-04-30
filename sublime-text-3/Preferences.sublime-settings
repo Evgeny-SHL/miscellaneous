@@ -4,14 +4,15 @@
 	"auto_complete_delay": 1000,
 	"bold_folder_labels": true,
 	"caret_style": "solid",
-	"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"draw_minimap_border": true,
+	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Consolas",
 	"font_options":
 	[
 		"no_italic"
 	],
-	"font_size": 10,
+	"font_size": 11,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
