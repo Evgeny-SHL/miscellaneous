@@ -7,8 +7,6 @@
 	[
 		"LaTeXTools",
 		"Package Control",
-		"PackageResourceViewer",
-		"SublimeLinter",
-		"SublimeLinter-cpplint"
+		"PackageResourceViewer"
 	]
 }
