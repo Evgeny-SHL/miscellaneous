@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Построение таблиц истинности</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="stylecalc.css">
+	</head>
+	<body>
+		<form id="submit">
+			<table id="tTable">
+				<tbody>
+					<tr><th>a</th><th>F</th></tr>
+					<tr><td>0</td><td><input type="text" class="res"></td></tr>
+					<tr><td>1</td><td><input type="text" class="res"></td></tr>
+				</tbody>
+			</table>
+			<br>
+			<input type="button" id="del" value="Удалить переменную">
+			<input type="button" id="add" value="Добавить переменную">
+			<br>
+			<input type="submit" id="create" value="Создать формулы">
+		</form>
+		<div id="result"></div>
+		<script src="logiccalculator.js"></script>
+		<script src="normalform.js"></script>
+	</body>
+</html>

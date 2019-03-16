@@ -1,0 +1,63 @@
+/*
+ID: ugnthes1
+PROG: calfflac
+LANG: C++
+*/
+#include <fstream>
+#include <string>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+string t, t1, a;
+vector<int> ind;
+vector<vector<int> > sub;
+
+int main() {
+    ifstream fin ("calfflac.in");
+    ofstream fout ("calfflac.out");
+
+	t = "", t1 = "";
+	while (!fin.eof()) {
+		getline(fin, a);
+		t = t + a + '\n';
+	}
+
+	t1 = t;
+	transform(t1.begin(), t1.end(), t1.begin(), ::toupper);
+
+	a = "";
+	ind.resize(t1.length());
+	int n = 0;
+	for (int i = 0; i < t1.length(); ++i)
+		if (t1[i] >= 'A' && t1[i] <= 'Z') {
+			a = a + t1[i];
+			ind[n] = i;
+			++n;
+		}
+
+	int u = 0, v = 0;
+
+	sub.resize(n + 1);
+	for (int i = 0; i <= n; ++i) {
+		sub[i].resize(n + 1);
+		for (int j = 0; j <= n; ++j) {
+			if (i == 0 || j == 0 || a[i - 1] != a[n - j]) sub[i][j] = 0;
+			else {
+				sub[i][j] = sub[i - 1][j - 1] + 1;
+				if (sub[i][j] > sub[u][v]) {
+					u = i;
+					v = j;
+				}
+			}
+		}
+	}
+
+	n = sub[u][v];
+	t1 = t.substr(ind[u - n], ind[u - 1] - ind[u - n] + 1);
+
+	fout << n << endl;
+	fout << t1 << endl;
+
+	return 0;
+}

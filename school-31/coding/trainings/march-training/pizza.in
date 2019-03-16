@@ -1,0 +1,36 @@
+2 4
+margarita 20
+marga 10
+? 1 5
+? 1 6
+? 2 5
+? 2 6
+
+2 2
+supreme 20
+supremesuper 30
+! 2 20
+? 2 2
+
+6 3
+a 1
+ab 2
+abc 3
+abcd 4
+abcde 5
+abcdef 6
+! 1 10
+! 2 20
+? 6 1
+
+1 2
+abacaba 100
+! 1 -10
+? 1 3
+
+2 2
+abacaba 10
+aba 20
+! 1 30
+? 2 0
+

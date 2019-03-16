@@ -1,0 +1,137 @@
+body {
+	margin-left: 1em;
+}
+table {
+	border-spacing: 0;
+	margin-left: 5em;
+	font-family: Consolas, monospace;
+	border: 1px solid #808080;
+	text-align: center;
+}
+th, td {
+	border: 1px solid #808080;
+	padding: 0px 10px;
+}
+tr:nth-child(2n+2) {
+	background-color: #c0c0ff;
+}
+tr:first-child {
+	background-color: #8080ff;
+}
+th, td:last-child {
+	font-weight: bold;
+}
+section.container > div#content > article {
+	font-family: Georgia, serif;
+}
+.sym {
+	font-family: Consolas, monospace;
+	color: #0080ff;
+}
+#error {
+	font-family: Consolas, monospace;
+	color: #ff0000;
+	padding: 2px;
+	font-weight: bold;
+	border: 1px solid #ff8000;
+	display: inline-block;
+}
+#message {
+	font-family: Consolas, monospace;
+	padding: 2px;
+	font-weight: bold;
+	border: 1px solid;
+	display: inline-block;
+}
+.plus {
+	color: #80ff00;
+}
+.minus {
+	color: #ff8000;
+}
+summary {
+	display: inline-block;
+}
+ul > li > ul {
+	list-style: none;
+}
+ul, ol {
+	margin: 0;
+}
+.rules {
+	border: 1px solid #808080;
+	padding: 10px;
+	margin-top: 10px;
+	display: inline-block;
+}
+#result {
+	margin-top: 10px;
+}
+iframe {
+	box-sizing: border-box;
+	border: 3px solid #808080;
+	display: block;
+}
+#content {
+	width: 90%;
+	height: 500px;
+	margin: auto;
+	min-height: 100%;
+}
+.tag {
+	font-family: Consolas, monospace;
+	white-space: pre;
+	font-weight: bold;
+	color: #0080ff;
+}
+menu {
+	box-sizing: border-box;
+}
+menu li {
+	display: inline-block;
+}
+menu li::before {
+	content: "• ";
+}
+menu li:first-child::before {
+	content: "";
+}
+.container {
+	box-sizing: border-box;
+	width: 90%;
+	margin: auto;
+}
+.res {
+	width: 13px;
+	height: 19px;
+	margin: 0;
+	display: inline;
+	padding: 0;
+	border: 0;
+	font-weight: bold;
+	font-family: Consolas, monospace;
+	font-size: 16px;
+	text-align: center;
+}
+a, a:link, a:visited {
+	color: #1040ff;
+	text-decoration: none;
+}
+a:hover {
+	color: #ff4010;
+	text-decoration: underline;
+}
+a:active {
+	color: #874087;
+}
+.f {
+	font-family: Consolas, monospace;
+	color: #404080;
+}
+.df {
+	font-style: italic;
+	text-decoration: underline;
+}
+p {
+	margin-bottom: 0;
+}

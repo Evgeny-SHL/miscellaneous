@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Проверка правильности аргумента</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="stylecalc.css">
+	</head>
+	<body>
+		<form id="submit">
+			Посылки:
+			<br>
+			<span id="formulas">
+				<input type="text" class="premise">
+			</span>
+			<br>
+			<input type="button" id="del" value="Убрать посылку">
+			<input type="button" id="add" value="Добавить посылку">
+			<br>
+			<input type="submit" id="get" value="Получить следствия">
+		</form>
+		<div id="result"></div>
+		<script src="logiccalculator.js"></script>
+		<script src="premise.js"></script>
+	</body>
+</html>

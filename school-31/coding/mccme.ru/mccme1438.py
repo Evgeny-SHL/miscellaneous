@@ -1,0 +1,1 @@
+print(['NO', 'YES'][sum([int(i) for i in list(input())]) % 3 == 0])

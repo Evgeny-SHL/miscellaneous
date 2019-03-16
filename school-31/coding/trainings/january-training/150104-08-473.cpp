@@ -1,0 +1,94 @@
+#include <fstream>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <set>
+using namespace std;
+ifstream cin("addition.in");
+ofstream cout("addition.out");
+
+vector<string> arr;
+set<string> sums;
+
+bool comp(string a, string b) {
+    if (a.length() < b.length()) {
+        return true;
+    }
+    if (a.length() == b.length() && a < b) {
+        return true;
+    }
+    return false;
+}
+
+string _sum(string a, string b) {
+    string ans = "";
+    int d1, d2;
+    while (a.length() < b.length()) {
+        a = "0" + a;
+    }
+    while (a.length() > b.length()) {
+        b = "0" + b;
+    }
+ //   cout << a << " " << b << '\n';
+    int n = (int)a.length();
+    for (int i = n - 1; i >= 0; --i) {
+        d1 = (int)(a[i] - '0');
+        d2 = (int)(b[i] - '0');
+        ans = char((d1 + d2) % 10 + '0') + ans;
+        if (d1 + d2 > 9) {
+            ans = char((d1 + d2) / 10 + '0') + ans;
+        }
+    }
+    return ans;
+}
+
+int main() {
+    int k = 0;
+    string a, b, c, s;
+    cin >> a >> b >> c;
+    s = _sum(a, _sum(b, c));
+    sums.insert(s);
+    arr.push_back(s);
+    s = _sum(a, _sum(c, b));
+ //   cout << s << '\n';
+    if (sums.find(s) == sums.end()) {
+        sums.insert(s);
+        arr.push_back(s);
+    }
+    s = _sum(b, _sum(a, c));
+ //   cout << s << '\n';
+    if (sums.find(s) == sums.end()) {
+        sums.insert(s);
+        arr.push_back(s);
+    }
+    s = _sum(b, _sum(c, a));
+ //   cout << s << '\n';
+    if (sums.find(s) == sums.end()) {
+        sums.insert(s);
+        arr.push_back(s);
+    }
+    s = _sum(c, _sum(a, b));
+//    cout << s << '\n';
+    if (sums.find(s) == sums.end()) {
+        sums.insert(s);
+        arr.push_back(s);
+    }
+    s = _sum(c, _sum(b, a));
+//    cout << s << '\n';
+    if (sums.find(s) == sums.end()) {
+        sums.insert(s);
+        arr.push_back(s);
+    }
+    k = (int)arr.size();
+    if (k > 1) {
+        cout << "YES";
+    } else {
+        cout << "NO";
+    }
+    cout << '\n';
+    sort(arr.begin(), arr.end(), comp);
+    for (int i = 0; i < k; ++i) {
+        cout << arr[i] << '\n';
+    }
+    return 0;
+}

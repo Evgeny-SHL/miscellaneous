@@ -1,0 +1,14 @@
+vasya vef 1 2 3
+petya we 11 10 10
+gore ert 10
+10 12
+
+
+
+
+
+gore
+ert 10 10 12
+
+
+
