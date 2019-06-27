@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.14)
+project(ChampionshipBackendFinal)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(ChampionshipBackendFinal01 01.cpp)
+add_executable(ChampionshipBackendFinal02 02.cpp)
+add_executable(ChampionshipBackendFinal03 03.cpp)
+add_executable(ChampionshipBackendFinal04 04.cpp)
+add_executable(ChampionshipBackendFinal05 05.cpp)
+add_executable(ChampionshipBackendFinal06 06.cpp)
+add_executable(ChampionshipBackendFinal07 07.cpp)
+add_executable(ChampionshipBackendFinal08 08.cpp)
+add_executable(ChampionshipBackendFinal09 09.cpp)
+add_executable(ChampionshipBackendFinal10 10.cpp)
+add_executable(ChampionshipBackendFinal11 11.cpp)
+add_executable(ChampionshipBackendFinal12 12.cpp)
